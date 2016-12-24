@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
-
+#import "SecViewController.h"
+#import "AppMethod.h"
 @interface ViewController ()
+{
+    UIActivityIndicatorView *indicator;
+}
+@property (weak, nonatomic) IBOutlet UILabel *status;
 
 @end
 
@@ -16,7 +21,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    indicator.frame = CGRectMake(50, 0, 500, 500);
+    //indicator.center = self.view.center;
+    [self.view addSubview:indicator];
+    [indicator bringSubviewToFront:self.view];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = TRUE;
+    [indicator startAnimating];
+ 
+//     [indicator stopAnimating];
+   }
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"Success");
+    if ([[AppMethod getStringDefault:@"islogin"] isEqualToString:@"YES"]) {
+        _status.text = @"Success";
+    }
+    else
+    {
+        _status.text = @"Failed";
+    }
+}
+- (IBAction)okbtn:(id)sender
+{
+    [indicator stopAnimating];
+    SecViewController *sec = [self.storyboard instantiateViewControllerWithIdentifier:@"SecViewController"];
+    [self.navigationController pushViewController:sec animated:YES];
 }
 
 

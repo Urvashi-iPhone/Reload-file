@@ -1,0 +1,13 @@
+//
+//  SecViewController.h
+//  Progress
+//
+//  Created by Tecksky Techonologies on 12/24/16.
+//  Copyright © 2016 Tecksky Technologies. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SecViewController : UIViewController
+
+@end

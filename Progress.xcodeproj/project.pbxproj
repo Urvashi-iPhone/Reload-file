@@ -15,6 +15,9 @@
 		AD01BDDC1E0E519500CD2DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD01BDDA1E0E519500CD2DC7 /* LaunchScreen.storyboard */; };
 		AD01BDE71E0E519600CD2DC7 /* ProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD01BDE61E0E519600CD2DC7 /* ProgressTests.m */; };
 		AD01BDF21E0E519600CD2DC7 /* ProgressUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD01BDF11E0E519600CD2DC7 /* ProgressUITests.m */; };
+		AD30C0691E0E55A400BE38FE /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD30C0681E0E55A400BE38FE /* SecViewController.m */; };
+		AD30C06C1E0E78D500BE38FE /* AppMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AD30C06B1E0E78D500BE38FE /* AppMethod.m */; };
+		AD30C06F1E0E79C800BE38FE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AD30C06E1E0E79C800BE38FE /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		AD01BDED1E0E519600CD2DC7 /* ProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD01BDF11E0E519600CD2DC7 /* ProgressUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressUITests.m; sourceTree = "<group>"; };
 		AD01BDF31E0E519600CD2DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD30C0671E0E55A400BE38FE /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		AD30C0681E0E55A400BE38FE /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
+		AD30C06A1E0E78D500BE38FE /* AppMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMethod.h; sourceTree = "<group>"; };
+		AD30C06B1E0E78D500BE38FE /* AppMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMethod.m; sourceTree = "<group>"; };
+		AD30C06D1E0E79C800BE38FE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AD30C06E1E0E79C800BE38FE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,16 @@
 		AD01BDCB1E0E519500CD2DC7 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				AD30C06A1E0E78D500BE38FE /* AppMethod.h */,
+				AD30C06B1E0E78D500BE38FE /* AppMethod.m */,
+				AD30C06D1E0E79C800BE38FE /* Reachability.h */,
+				AD30C06E1E0E79C800BE38FE /* Reachability.m */,
 				AD01BDCF1E0E519500CD2DC7 /* AppDelegate.h */,
 				AD01BDD01E0E519500CD2DC7 /* AppDelegate.m */,
 				AD01BDD21E0E519500CD2DC7 /* ViewController.h */,
 				AD01BDD31E0E519500CD2DC7 /* ViewController.m */,
+				AD30C0671E0E55A400BE38FE /* SecViewController.h */,
+				AD30C0681E0E55A400BE38FE /* SecViewController.m */,
 				AD01BDD51E0E519500CD2DC7 /* Main.storyboard */,
 				AD01BDD81E0E519500CD2DC7 /* Assets.xcassets */,
 				AD01BDDA1E0E519500CD2DC7 /* LaunchScreen.storyboard */,
@@ -273,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD30C0691E0E55A400BE38FE /* SecViewController.m in Sources */,
 				AD01BDD41E0E519500CD2DC7 /* ViewController.m in Sources */,
+				AD30C06C1E0E78D500BE38FE /* AppMethod.m in Sources */,
 				AD01BDD11E0E519500CD2DC7 /* AppDelegate.m in Sources */,
+				AD30C06F1E0E79C800BE38FE /* Reachability.m in Sources */,
 				AD01BDCE1E0E519500CD2DC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +525,7 @@
 				AD01BDF81E0E519600CD2DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD01BDF91E0E519600CD2DC7 /* Build configuration list for PBXNativeTarget "ProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +534,7 @@
 				AD01BDFB1E0E519600CD2DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD01BDFC1E0E519600CD2DC7 /* Build configuration list for PBXNativeTarget "ProgressUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +543,7 @@
 				AD01BDFE1E0E519600CD2DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
